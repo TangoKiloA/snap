@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tauri-apps/tauri/dev/crates/tauri-config-schema/schema.json",
+  "productName": "snap",
+  "version": "0.1.0",
+  "identifier": "com.adjective.snap-pc",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "windows": [],
+    "withGlobalTauri": true,
+    "security": {
+      "assetProtocol": {
+        "enable": true,
+        "scope": {
+          "allow": ["$APPLOCALDATA/Temp/snap-*"],
+          "deny": []
+        }
+      },
+      "csp": null
+    }
+  },
+  "plugins": {},
+  "bundle": {
+    "targets": ["nsis"],
+    "publisher": "Murtha"
+  }
+}

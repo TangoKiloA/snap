@@ -1,0 +1,32 @@
+# Rust
+target/
+
+# Node
+node_modules/
+dist/
+
+# Tauri build outputs
+app/src-tauri/target/
+app/src-tauri/WixTools/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Snap runtime files
+.snap/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/settings.json
+.idea/
+*.suo
+*.user
